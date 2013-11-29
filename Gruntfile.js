@@ -44,19 +44,21 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
-            'assets/js/plugins/bootstrap/transition.js',
-            'assets/js/plugins/bootstrap/alert.js',
-            'assets/js/plugins/bootstrap/button.js',
-            'assets/js/plugins/bootstrap/carousel.js',
-            'assets/js/plugins/bootstrap/collapse.js',
-            'assets/js/plugins/bootstrap/dropdown.js',
-            'assets/js/plugins/bootstrap/modal.js',
-            'assets/js/plugins/bootstrap/tooltip.js',
-            'assets/js/plugins/bootstrap/popover.js',
-            'assets/js/plugins/bootstrap/scrollspy.js',
-            'assets/js/plugins/bootstrap/tab.js',
-            'assets/js/plugins/bootstrap/affix.js',
-            'assets/js/plugins/*.js',
+            'assets/js/foundation/foundation.js',
+            'assets/js/foundation/foundation.abide.js',
+            'assets/js/foundation/foundation.accordion.js',
+            'assets/js/foundation/foundation.alert.js',
+            'assets/js/foundation/foundation.clearing.js',
+            'assets/js/foundation/foundation.dropdown.js',
+            'assets/js/foundation/foundation.interchange.js',
+            'assets/js/foundation/foundation.joyride.js',
+            'assets/js/foundation/foundation.magellan.js',
+            'assets/js/foundation/foundation.offcanvas.js',
+            'assets/js/foundation/foundation.orbit.js',
+            'assets/js/foundation/foundation.reveal.js',
+            'assets/js/foundation/foundation.tab.js',
+            'assets/js/foundation/foundation.tooltip.js',
+            'assets/js/foundation/foundation.topbar.js',
             'assets/js/_*.js'
           ]
         },
@@ -101,7 +103,7 @@ module.exports = function(grunt) {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: false
+          livereload: true
         },
         files: [
           'assets/css/main.min.css',
