@@ -12,6 +12,17 @@ module.exports = function(grunt) {
         '!assets/js/scripts.min.js'
       ]
     },
+    sass: {
+      dist: {
+        files: {
+          'assets/css/main.min.css' : 'assets/sass/main.scss'
+        },
+        options: {
+          compass: true,
+          style: 'compressed'
+        }
+      }
+    },
     less: {
       dist: {
         files: {
@@ -73,6 +84,13 @@ module.exports = function(grunt) {
         ],
         tasks: ['less', 'version']
       },
+      sass: {
+        files: [
+          'assets/sass/*.scss',
+          'assets/sass/**/*.scss'
+        ],
+        tasks: ['sass', 'version']
+      },
       js: {
         files: [
           '<%= jshint.all %>'
@@ -108,11 +126,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-wp-version');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
-    'less',
+    'sass',
     'uglify',
     'version'
   ]);
