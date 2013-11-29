@@ -1,0 +1,5 @@
+@import "compass/css3/background-size";
+body {
+  background-image: url('../img/home_bg.jpg');
+  @include background-size(cover);
+}
