@@ -19,27 +19,27 @@ module.exports = function(grunt) {
         },
         options: {
           compass: true,
-          style: 'compressed'
+          style: 'expanded'
         }
       }
     },
-    less: {
-      dist: {
-        files: {
-          'assets/css/main.min.css': [
-            'assets/less/app.less'
-          ]
-        },
-        options: {
-          compress: true,
-          // LESS source map
-          // To enable, set sourceMap to true and update sourceMapRootpath based on your install
-          sourceMap: false,
-          sourceMapFilename: 'assets/css/main.min.css.map',
-          sourceMapRootpath: '/app/themes/roots/'
-        }
-      }
-    },
+    // less: {
+    //   dist: {
+    //     files: {
+    //       'assets/css/main.min.css': [
+    //         'assets/less/app.less'
+    //       ]
+    //     },
+    //     options: {
+    //       compress: true,
+    //       // LESS source map
+    //       // To enable, set sourceMap to true and update sourceMapRootpath based on your install
+    //       sourceMap: false,
+    //       sourceMapFilename: 'assets/css/main.min.css.map',
+    //       sourceMapRootpath: '/app/themes/roots/'
+    //     }
+    //   }
+    // },
     uglify: {
       dist: {
         files: {
@@ -79,13 +79,13 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      less: {
-        files: [
-          'assets/less/*.less',
-          'assets/less/bootstrap/*.less'
-        ],
-        tasks: ['less', 'version']
-      },
+      // less: {
+      //   files: [
+      //     'assets/less/*.less',
+      //     'assets/less/bootstrap/*.less'
+      //   ],
+      //   tasks: ['less', 'version']
+      // },
       sass: {
         files: [
           'assets/sass/*.scss',
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  // grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-wp-version');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
