@@ -4,6 +4,22 @@
 @import "animate";
 @import "akkurat";
 
+.post header {
+  color: #856011;
+  a {
+    color: #A89338;
+    &:hover {
+      color: #b35c2a;
+    }
+  }
+}
+
+.author {
+  display: inline-block;
+  margin: 0 0 1.53846rem 0;
+  padding: 0.76923rem 0.92308rem;
+}
+
 .widget_subpages > div > ul {
   @include side-nav();
 }
@@ -13,11 +29,11 @@
   border-top: 10px solid #eee8c9;
   padding: rem-calc(20px);
   background: #f7f3da;
-  @include background-image(linear-gradient(left top, #f7f3da, #eee8c9));
+  @include background-image(linear-gradient(center top, #f7f3da, #C2B888, #C2B888, #f7f3da));
   a {
     color: #A89338;
     &:hover {
-      text-decoration: underline;
+      color: #b35c2a;
     }
   }
   h1, h2, h3, h4, h5 {
@@ -25,7 +41,7 @@
   }
   h2 {
     color: #a80141;
-    border-bottom: 5px solid rgba(167, 139, 91, 0.29);
+    border-bottom: 5px solid #ece4c9;
     line-height: 0.9;
     font-size: 2.1REM;
     margin: -20px -20px 10px;
