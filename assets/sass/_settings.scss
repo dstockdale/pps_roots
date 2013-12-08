@@ -37,7 +37,7 @@ $rem-base: 13px;
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: Akkurat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -56,6 +56,12 @@ $rem-base: 13px;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+
+$primary-color: #994878;
+$anchor-font-color: #2581F7;
+$anchor-font-color-hover: #B35C2A;
+
+$header-font-family: 'Akkurat Bold', 'Helvetica Neue', Arial, sans-serif;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -930,7 +936,7 @@ $rem-base: 13px;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba(51, 51, 51, 0.5);
+$topbar-bg-color: rgb(44, 40, 17);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

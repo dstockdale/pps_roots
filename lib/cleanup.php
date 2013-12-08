@@ -107,6 +107,11 @@ add_filter('style_loader_tag', 'roots_clean_style_tag');
  * Add and remove body_class() classes
  */
 function roots_body_class($classes) {
+  $colour_field = strlen(get_field('colour_scheme')) > 0 ?
+                    strtolower(trim(get_field('colour_scheme'))) :
+                    'dark-on-light';
+  $colour_scheme = str_replace(" ", "-", $colour_field);
+
   // Add post/page slug
   if (is_single() || is_page() && !is_front_page()) {
     $classes[] = basename(get_permalink());
@@ -119,6 +124,7 @@ function roots_body_class($classes) {
     $home_id_class
   );
   $classes = array_diff($classes, $remove_classes);
+  array_push($classes, $colour_scheme);
 
   return $classes;
 }

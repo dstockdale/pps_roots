@@ -1,9 +1,7 @@
-<div class="fixed">
+<div class="contain-to-grid">
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
-      <li class="name">
-        <h1><a href="#">PPS</a></h1>
-      </li>
+      <li class="name"></li>
       <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
     </ul>
     <section class="top-bar-section">
