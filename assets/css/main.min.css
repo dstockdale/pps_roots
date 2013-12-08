@@ -7012,6 +7012,19 @@ th.hide-for-touch {
   padding: 0.76923rem 0.92308rem;
 }
 
+.widget_subpages h3 {
+  font-size: 1.23077rem;
+  border-bottom: 3px solid;
+  text-transform: uppercase;
+  margin: 0;
+}
+.widget_subpages > div > ul > li a {
+  padding: 6px 20px;
+  background: #C2B888;
+  font-family: Akkurat;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
 .widget_subpages > div > ul {
   display: block;
   margin: 0;
@@ -7026,7 +7039,35 @@ th.hide-for-touch {
 }
 .widget_subpages > div > ul li a {
   display: block;
-  color: #994878;
+  color: "#fff";
+}
+.widget_subpages > div > ul li.active > a:first-child {
+  color: #4d4d4d;
+  font-weight: normal;
+  font-family: Akkurat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.widget_subpages > div > ul li.divider {
+  border-top: 1px solid;
+  height: 0;
+  padding: 0;
+  list-style: none;
+  border-top-color: #e6e6e6;
+}
+.widget_subpages > div > ul {
+  display: block;
+  margin: 0;
+  padding: 1.07692rem 0;
+  list-style-type: none;
+  list-style-position: inside;
+  font-family: Akkurat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.widget_subpages > div > ul li {
+  margin: 0 0 0.53846rem 0;
+  font-size: 1.07692rem;
+}
+.widget_subpages > div > ul li a {
+  display: block;
+  color: "#fff";
 }
 .widget_subpages > div > ul li.active > a:first-child {
   color: #4d4d4d;

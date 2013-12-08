@@ -20,8 +20,30 @@
   padding: 0.76923rem 0.92308rem;
 }
 
-.widget_subpages > div > ul {
-  @include side-nav();
+.widget_subpages {
+  h3 {
+    font-size: rem-calc(16px);
+    border-bottom: 3px solid;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &> div > ul > li a {
+    padding: 6px 20px;
+    background: #C2B888;
+    font-family: Akkurat;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+  }
+  &> div > ul {
+    @include side-nav(
+      $link-color:'#fff'
+    );
+  }
+  &> div > ul {
+    @include side-nav(
+      $link-color:'#fff'
+    );
+  }
 }
 
 .widget_custom_post_widget {
