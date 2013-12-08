@@ -7072,7 +7072,7 @@ th.hide-for-touch {
 .footer p.copyright {
   margin: 6px 0 0;
   font-size: 0.75rem;
-  color: #666666;
+  color: #BBBBBB;
 }
 
 .socials {
@@ -7442,10 +7442,6 @@ h2.entry-title a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-  }
-
-  .wrap {
-    padding-bottom: 5.76923rem;
   }
 
   .doc-header {
