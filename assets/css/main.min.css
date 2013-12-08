@@ -7057,7 +7057,7 @@ th.hide-for-touch {
   margin-left: 6px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.80rem;
 }
 
 .footer ul.pps-links li a {
@@ -7393,6 +7393,12 @@ h2.entry-title a:hover {
   }
   .light-on-dark .footer {
     border-top: 2px solid #eeeeee;
+  }
+  .light-on-dark .footer ul.pps-links li a {
+    color: white;
+  }
+  .light-on-dark .footer ul.pps-links li a:hover {
+    color: rgba(255, 255, 255, 0.6);
   }
   .light-on-dark .down {
     background: transparent url("../img/down.png") no-repeat center top;
