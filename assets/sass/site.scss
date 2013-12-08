@@ -8,6 +8,43 @@
   @include side-nav();
 }
 
+.widget_custom_post_widget {
+  color: #503B06;
+  border-top: 10px solid #eee8c9;
+  padding: rem-calc(20px);
+  background: #f7f3da;
+  @include background-image(linear-gradient(left top, #f7f3da, #eee8c9));
+  a {
+    color: #A89338;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  h2 {
+    color: #a80141;
+    border-bottom: 5px solid rgba(167, 139, 91, 0.29);
+    line-height: 0.9;
+    font-size: 2.1REM;
+    margin: -20px -20px 10px;
+    line-height: 1.5;
+    background: rgba(231, 214, 159, 0);
+    font-style: italic;
+  }
+  h3 {
+    line-height: 1.1;
+    line-height: 1.1;
+    font-size: 1.5rem;
+    color: #856011;
+  }
+  p, ul {
+    color: #503B06;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+
 .top-bar-section ul li > a {
   font-family: Akkurat;
 }
@@ -123,10 +160,10 @@ h2.entry-title a {
   .footer {
     text-align: center;
     ul.pps-links {
-      margin-top: 10px;
+      margin-top: rem-calc(10px);
     }
     ul.socials {
-      margin: 0 auto 10px auto;
+      margin: rem-calc(20px) auto rem-calc(10px) auto;
       a {
         &.face-it {
           background-position: 0 -40px;
@@ -289,10 +326,6 @@ h2.entry-title a {
         color: #ffffff;
       }
     }
-  }
-
-  .sidebar {
-    padding-top: rem-calc(70px);
   }
 
   .dark-on-light ul.socials li a {

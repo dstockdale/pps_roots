@@ -7025,6 +7025,47 @@ th.hide-for-touch {
   border-top-color: #e6e6e6;
 }
 
+.widget_custom_post_widget {
+  color: #503B06;
+  border-top: 10px solid #eee8c9;
+  padding: 1.53846rem;
+  background: #f7f3da;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #f7f3da), color-stop(100%, #eee8c9));
+  background-image: -webkit-linear-gradient(left top, #f7f3da, #eee8c9);
+  background-image: -moz-linear-gradient(left top, #f7f3da, #eee8c9);
+  background-image: -o-linear-gradient(left top, #f7f3da, #eee8c9);
+  background-image: linear-gradient(left top, #f7f3da, #eee8c9);
+}
+.widget_custom_post_widget a {
+  color: #A89338;
+}
+.widget_custom_post_widget a:hover {
+  text-decoration: underline;
+}
+.widget_custom_post_widget h1, .widget_custom_post_widget h2, .widget_custom_post_widget h3, .widget_custom_post_widget h4, .widget_custom_post_widget h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.widget_custom_post_widget h2 {
+  color: #a80141;
+  border-bottom: 5px solid rgba(167, 139, 91, 0.29);
+  line-height: 0.9;
+  font-size: 2.1REM;
+  margin: -20px -20px 10px;
+  line-height: 1.5;
+  background: rgba(231, 214, 159, 0);
+  font-style: italic;
+}
+.widget_custom_post_widget h3 {
+  line-height: 1.1;
+  line-height: 1.1;
+  font-size: 1.5rem;
+  color: #856011;
+}
+.widget_custom_post_widget p, .widget_custom_post_widget ul {
+  color: #503B06;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .top-bar-section ul li > a {
   font-family: Akkurat;
 }
@@ -7151,10 +7192,10 @@ h2.entry-title a:hover {
     text-align: center;
   }
   .footer ul.pps-links {
-    margin-top: 10px;
+    margin-top: 0.76923rem;
   }
   .footer ul.socials {
-    margin: 0 auto 10px auto;
+    margin: 1.53846rem auto 0.76923rem auto;
   }
   .footer ul.socials a.face-it {
     background-position: 0 -40px;
@@ -7405,10 +7446,6 @@ h2.entry-title a:hover {
   }
   .light-on-dark .down a {
     color: #ffffff;
-  }
-
-  .sidebar {
-    padding-top: 5.38462rem;
   }
 
   .dark-on-light ul.socials li a.face-it {
