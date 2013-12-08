@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         },
         options: {
           compass: true,
-          style: 'expanded'
+          style: 'compressed'
         }
       }
     },
