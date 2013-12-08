@@ -1,3 +1,11 @@
+# Pro Production Solutions Template
+
+This is based on roots as outlined below but I've ripped out all the less and bootstrap stuff and got grunt using sass and foundation and the css/js part.
+
+I'll extract the useful bits out later at some point to use for other Wordpress things.
+
+**Ignore all the bit below that refer to less and bootstrap. Use the source Luke.**
+
 # [Roots Theme](http://roots.io/)
 
 Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
