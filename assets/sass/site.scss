@@ -172,10 +172,15 @@
   }
 }
 
-h2.entry-title a {
-  color: #A89338;
-  &:hover {
-    color: rgba(89, 76, 45, 0.7);
+h2.entry-title {
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 1.9rem;
+  a {
+    color: #000;
+    &:hover {
+      color: rgba(89, 76, 45, 0.7);
+    }
   }
 }
 
