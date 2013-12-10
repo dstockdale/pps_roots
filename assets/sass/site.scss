@@ -4,6 +4,11 @@
 @import "animate";
 @import "akkurat";
 
+strong, b {
+  font-family: $header-font-family;
+  font-weight: bold;
+}
+
 .post header {
   color: #856011;
   a {

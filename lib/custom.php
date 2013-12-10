@@ -48,3 +48,7 @@ if(function_exists("register_field_group"))
     'menu_order' => 99,
   ));
 }
+
+if ( function_exists( 'add_image_size' ) ) {
+  add_image_size( 'in_page_size', 470, 9999 );
+}
